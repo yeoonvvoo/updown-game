@@ -1,8 +1,85 @@
-body
+body{
+    background-size: cover;
+    height: 100vh;
+    font-family: "East Sea Dokdo", cursive;
+    background-image: url(image/sojugame.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .container{
-    border: 10px solid rgb(255, 0, 0);
+    border: 10px solid white;
     border-radius: 20px;
     text-align: center;
     background-color: rgba(247, 243, 242, 0.7);
+}
+
+.button-style{
+    height: 80px;
+    width: 100px;
+    font-size: 30pt;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.pre-title{
+    font-size: 5vw;
+    font-weight: bold;
+    color: khaki;
+    -webkit-text-stroke: 1px #333;
+}
+
+.title{
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.sub-title{
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.result-text{
+    font-size: 6vw;
+}
+
+.red-text{
+    color: red;
+}
+
+.main-img{
+    width: 20vw;
+    height: 20vh;
+}
+
+.form-control{
+    height: 80px;
+    font-size: 3vw;
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+@media screen and (max-width: 48rem){
+    .pre-title{
+        font-size: 10vw;
+    }
+    .title{
+        font-size: 12vw;
+    }
+    .sub-title{
+        font-size: 11vw;
+    }
+    .form-control{
+        font-size: 8vw;
+        max-width: 500px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .main-img{
+        width: 40vw;
+    }
+
 }
